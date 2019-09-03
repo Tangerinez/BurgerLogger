@@ -1,13 +1,14 @@
-CREATE DATABASE IF NOT EXISTS burgers_db;
-USE burgers_db;
+CREATE DATABASE burger_db;
 
--- If the table already exists, remove it before trying to create the table again
-DROP TABLE IF EXISTS burgers;
+USE burger_db;
 
--- Create the burgers table
-CREATE TABLE burgers (
-    id int NOT NULL AUTO_INCREMENT,
-    burger_name varchar(255) NOT NULL,
-    devoured BOOL DEFAULT false,
-    PRIMARY KEY (id)
-);
+CREATE TABLE burgers
+(
+    id INT
+    AUTO_INCREMENT NOT NULL,
+    burger_name VARCHAR
+    (30),
+    devoured BOOLEAN,
+    PRIMARY KEY
+    (id)
+)
